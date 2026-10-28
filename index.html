@@ -12,7 +12,6 @@
   body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:#eef2f9;color:#1e293b;padding:18px}
   .app{max-width:1480px;margin:0 auto}
 
-  /* header */
   .header{background:linear-gradient(135deg,#0b1d3a 0%,#1a4b8c 100%);border-radius:24px;padding:20px 28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 12px 28px -8px rgba(0,20,40,.4);margin-bottom:26px}
   .header-left{display:flex;align-items:center;gap:16px}
   .logo{width:48px;height:48px;background:#fff;border-radius:14px;display:grid;place-items:center;font-weight:900;font-size:20px;color:#1a4b8c;box-shadow:0 6px 14px rgba(0,0,0,.25)}
@@ -24,7 +23,6 @@
   .btn-accent{background:#2dd4bf;border-color:#2dd4bf;color:#062e36}
   .btn-accent:hover{background:#5eead4;border-color:#5eead4}
 
-  /* loader */
   .loader-overlay{position:fixed;inset:0;background:#eef2f9;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;transition:opacity .35s;padding:20px}
   .loader-overlay.hide{opacity:0;pointer-events:none}
   .loader-card{background:#fff;max-width:620px;width:100%;border-radius:32px;padding:34px 28px;box-shadow:0 30px 60px -20px rgba(0,0,0,.25);text-align:center;border:1px solid #dce7f5}
@@ -38,7 +36,6 @@
   .loader-stage{font-size:.85rem;font-weight:700;color:#3b6bb5;margin-top:8px;min-height:20px}
   .loader-error{color:#dc2626;font-weight:800}
 
-  /* KPI side-by-side */
   .kpi-split{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:26px}
   .kpi-block{background:#fff;border-radius:22px;padding:18px;box-shadow:0 8px 18px -8px rgba(0,0,0,.08);border:1px solid #e6edf8}
   .kpi-block-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px}
@@ -53,14 +50,15 @@
   .kpi-mini.orange{border-left-color:#ea580c}.kpi-mini.orange .value{color:#9a3412}
   .kpi-mini.purple{border-left-color:#7c3aed}.kpi-mini.purple .value{color:#5b21b6}
   .kpi-mini.red{border-left-color:#dc2626}.kpi-mini.red .value{color:#991b1b}
+  .kpi-mini.teal{border-left-color:#0891b2}.kpi-mini.teal .value{color:#155e75}
+  .kpi-mini.blue{border-left-color:#2563eb}
+  .kpi-mini .value.money{font-size:1.15rem;letter-spacing:-.02em}
 
-  /* charts */
   .chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:26px}
   .chart-card{background:#fff;border-radius:22px;padding:18px 18px 12px;box-shadow:0 8px 18px -8px rgba(0,0,0,.08);border:1px solid #e6edf8}
   .chart-card h3{font-size:1.05rem;font-weight:800;color:#0b1d3a;margin-bottom:12px;padding-left:4px}
   .chart-wrap{position:relative;height:280px;width:100%}
 
-  /* map */
   .map-card{background:#fff;border-radius:22px;padding:18px;box-shadow:0 8px 18px -8px rgba(0,0,0,.08);border:1px solid #e6edf8;margin-bottom:26px}
   .map-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:12px}
   .map-head h3{font-size:1.05rem;font-weight:800;color:#0b1d3a}
@@ -76,7 +74,6 @@
   .legend-dot.gray{background:#94a3b8}
   .map-container{height:420px;border-radius:16px;border:1px solid #dce7f5;overflow:hidden}
 
-  /* table */
   .table-card{background:#fff;border-radius:22px;padding:18px;box-shadow:0 8px 18px -8px rgba(0,0,0,.08);border:1px solid #e6edf8;margin-bottom:26px}
   .table-card h3{font-size:1.05rem;font-weight:800;color:#0b1d3a;margin-bottom:14px}
   .filter-bar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px;align-items:center}
@@ -85,7 +82,7 @@
   .btn-sm{padding:8px 16px;border-radius:40px;border:1px solid #cbd5e1;background:#fff;font-weight:700;font-size:.75rem;cursor:pointer;transition:.15s;color:#334155}
   .btn-sm:hover{background:#eef2ff}
   .table-scroll{overflow-x:auto;border-radius:14px;border:1px solid #e6edf8;max-height:560px;overflow-y:auto}
-  table{width:100%;border-collapse:collapse;font-size:.75rem;min-width:1200px}
+  table{width:100%;border-collapse:collapse;font-size:.75rem;min-width:1350px}
   th{background:#0b1d3a;color:#fff;padding:12px 10px;font-weight:700;text-align:left;position:sticky;top:0;z-index:2;white-space:nowrap;font-size:.7rem;letter-spacing:.3px}
   td{padding:10px 10px;border-bottom:1px solid #eef2f8;color:#1e293b;vertical-align:middle}
   tr:hover td{background:#f8fbff}
@@ -100,7 +97,6 @@
   .pagination button:hover{background:#e2e8f0}
   .pagination button.active{background:#1e40af;border-color:#1e40af;color:#fff}
 
-  /* modal */
   .modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:10000;align-items:center;justify-content:center;padding:24px}
   .modal.show{display:flex}
   .modal img{max-width:92%;max-height:90%;border-radius:16px;box-shadow:0 30px 60px rgba(0,0,0,.5);background:#fff}
@@ -113,7 +109,6 @@
 </head>
 <body>
 
-<!-- LOADER -->
 <div class="loader-overlay" id="loaderOverlay">
   <div class="loader-card">
     <div class="loader-icon">🦸</div>
@@ -125,7 +120,6 @@
   </div>
 </div>
 
-<!-- DASHBOARD -->
 <div class="app" id="dashboard" style="display:none;">
   <div class="header">
     <div class="header-left">
@@ -141,7 +135,6 @@
     </div>
   </div>
 
-  <!-- ============ SIDE-BY-SIDE KPI ============ -->
   <div class="kpi-split">
     <div class="kpi-block">
       <div class="kpi-block-head">
@@ -159,19 +152,22 @@
     </div>
   </div>
 
-  <!-- ============ CHARTS ============ -->
   <div class="chart-grid">
     <div class="chart-card">
       <h3>📈 Verified Institutions by Date</h3>
       <div class="chart-wrap"><canvas id="chartInstitutions"></canvas></div>
     </div>
     <div class="chart-card">
-      <h3>📊 Counters Logged by Date</h3>
-      <div class="chart-wrap"><canvas id="chartCounters"></canvas></div>
+      <h3>💰 Order Value by Date</h3>
+      <div class="chart-wrap"><canvas id="chartOrderValue"></canvas></div>
     </div>
   </div>
 
-  <!-- ============ MAP ============ -->
+  <div class="chart-card" style="margin-bottom:26px">
+    <h3>📊 Counters Logged by Date</h3>
+    <div class="chart-wrap"><canvas id="chartCounters"></canvas></div>
+  </div>
+
   <div class="map-card">
     <div class="map-head">
       <h3>📍 Institution Map</h3>
@@ -188,7 +184,6 @@
     <div class="map-container" id="map"></div>
   </div>
 
-  <!-- ============ TABLE ============ -->
   <div class="table-card">
     <h3>🏢 Institution Detail Table</h3>
     <div class="filter-bar">
@@ -203,7 +198,8 @@
         <thead>
           <tr>
             <th>Photo</th><th>Institution</th><th>Type</th><th>State</th><th>Pincode</th>
-            <th>Verified</th><th>Entry</th><th>Counters</th><th>Visit Date</th><th>Audit ID</th>
+            <th>Verified</th><th>Entry</th><th>Main Counters</th><th>Opp Counters</th>
+            <th>Total Counters</th><th>Order Value</th><th>Visit Date</th><th>Audit ID</th>
           </tr>
         </thead>
         <tbody id="tableBody"></tbody>
@@ -213,7 +209,6 @@
   </div>
 </div>
 
-<!-- IMAGE MODAL -->
 <div class="modal" id="imgModal" onclick="closeModal()">
   <span class="modal-close">&times;</span>
   <img id="modalImg" src="" alt="preview">
@@ -241,13 +236,13 @@ let filteredRows = [];
 let currentPage = 1;
 const PAGE_SIZE = 50;
 let map, mapMarkers = [];
-let chartInst, chartCount;
+let chartInst, chartCount, chartOrder;
 let loadedSheets = {};
 let sheetIndex = 0;
 let activeScript = null;
 let activeTimeout = null;
 let TODAY_KEY = '';
-let currentMapFilter = 'all';   // 'all' | 'verified' | 'unverified'
+let currentMapFilter = 'all';
 
 // ============================================================
 // LOADER UI
@@ -268,7 +263,7 @@ function setProgress(pct, msg, isError) {
 }
 
 // ============================================================
-// SHEET LOADER (JSONP with timeout)
+// SHEET LOADER
 // ============================================================
 function cleanupLoader() {
   if (activeScript) { activeScript.remove(); activeScript = null; }
@@ -408,7 +403,8 @@ function normalizeRow(r, src) {
     sde: pick(r, ['SDE Name', 'SDE_Name', 'SDE']),
     mainCounters: [],
     oppositeCounters: [],
-    totalCounters: 0
+    totalCounters: 0,
+    orderValue: 0
   };
 
   if (!row.state) {
@@ -438,6 +434,20 @@ function normDate(v) {
 
 function isToday(r) {
   return normDate(r.visitDate) === TODAY_KEY;
+}
+
+function parseNumber(v) {
+  if (v == null) return 0;
+  let s = String(v).trim();
+  if (!s || s === '-' || s === '#N/A' || s === 'null') return 0;
+  s = s.replace(/,/g, '').replace(/₹/g, '').replace(/rs\.?/ig, '').replace(/inr/ig, '').replace(/[^0-9.\-]/g, '');
+  const n = parseFloat(s);
+  return isNaN(n) ? 0 : n;
+}
+
+function formatMoney(n) {
+  n = Number(n || 0);
+  return n.toLocaleString('en-IN', { maximumFractionDigits: 0 });
 }
 
 // ============================================================
@@ -472,6 +482,12 @@ function mergeAllSheets() {
         inst = normalizeRow(cr, 'CounterOnly');
         inst.auditId = aid;
         inst.verified = 'Yes';
+        // try to fill from counter sheet if available
+        if (!inst.institutionName) inst.institutionName = pick(cr, ['Institution_Name', 'Institution Name']);
+        if (!inst.institutionType) inst.institutionType = pick(cr, ['Institution_Type', 'Institution Type']);
+        if (!inst.state) inst.state = pick(cr, ['State']);
+        if (!inst.district) inst.district = pick(cr, ['District']);
+        if (!inst.visitDate) inst.visitDate = pick(cr, ['Visit_Date', 'Visit Date']);
         master.push(inst);
         byAudit[key] = inst;
       }
@@ -485,7 +501,7 @@ function mergeAllSheets() {
         visitStatus: pick(cr, ['Counter_Visit_Status', 'Counter Visit Status']),
         ownership: pick(cr, ['Ownership_Type', 'Ownership Type']),
         photo: pick(cr, ['Outlet_Photo_Link', 'Outlet Photo Link']),
-        orderValue: pick(cr, ['Order_Value', 'Order Value', 'OrderValue'])
+        orderValue: parseNumber(pick(cr, ['Order_Value', 'Order Value', 'OrderValue', 'Order_Amount', 'Amount']))
       };
       if (side === 'Opposite') inst.oppositeCounters.push(counter);
       else inst.mainCounters.push(counter);
@@ -499,6 +515,15 @@ function mergeAllSheets() {
     r.mainCounters = r.mainCounters || [];
     r.oppositeCounters = r.oppositeCounters || [];
 
+    // If counter rows have no order value but the master row has a field, fall back
+    const masterOrderRaw = pick(r, ['Order_Value', 'Order Value', 'Total_Order_Value', 'Total Order Value']);
+    if (masterOrderRaw) {
+      const n = parseNumber(masterOrderRaw);
+      if (n > 0 && (r.mainCounters.length + r.oppositeCounters.length) === 0) {
+        r.orderValue = n;
+      }
+    }
+
     if (r.numCounters && r.mainCounters.length === 0) {
       const n = parseInt(r.numCounters, 10) || 0;
       for (let i = 0; i < n; i++) {
@@ -511,6 +536,13 @@ function mergeAllSheets() {
         r.oppositeCounters.push({ side: 'Opposite', counterNo: i + 1, outletName: '', orderValue: 0 });
       }
     }
+
+    // Compute order value from counters (sum of all counter order values)
+    const counterSum =
+      r.mainCounters.reduce((s, c) => s + (c.orderValue || 0), 0) +
+      r.oppositeCounters.reduce((s, c) => s + (c.orderValue || 0), 0);
+
+    r.orderValue = counterSum > 0 ? counterSum : (r.orderValue || 0);
     r.totalCounters = r.mainCounters.length + r.oppositeCounters.length;
   });
 
@@ -530,7 +562,7 @@ function renderAll() {
 }
 
 // ============================================================
-// KPI (side-by-side blocks)
+// KPI
 // ============================================================
 function renderKPIBlock(targetId, rows) {
   const total = rows.length;
@@ -540,16 +572,17 @@ function renderKPIBlock(targetId, rows) {
   const totalCounters = rows.reduce((s, r) => s + (r.totalCounters || 0), 0);
   const mainCounters = rows.reduce((s, r) => s + r.mainCounters.length, 0);
   const oppCounters = rows.reduce((s, r) => s + r.oppositeCounters.length, 0);
+  const orderValue = rows.reduce((s, r) => s + (r.orderValue || 0), 0);
 
   document.getElementById(targetId).innerHTML = `
     <div class="kpi-mini blue"><h4>Total</h4><div class="value">${total}</div></div>
     <div class="kpi-mini green"><h4>Verified</h4><div class="value">${verified}</div></div>
     <div class="kpi-mini orange"><h4>Unverified</h4><div class="value">${unverified}</div></div>
     <div class="kpi-mini purple"><h4>Entry Allowed</h4><div class="value">${entryYes}</div></div>
+    <div class="kpi-mini teal"><h4>Order Value</h4><div class="value money">₹${formatMoney(orderValue)}</div></div>
     <div class="kpi-mini blue"><h4>Total Counters</h4><div class="value">${totalCounters}</div></div>
     <div class="kpi-mini green"><h4>Main</h4><div class="value">${mainCounters}</div></div>
     <div class="kpi-mini purple"><h4>Opposite</h4><div class="value">${oppCounters}</div></div>
-    <div class="kpi-mini red"><h4>Today's Visits</h4><div class="value">${rows === allRows ? allRows.filter(isToday).length : ''}</div></div>
   `;
 }
 
@@ -564,9 +597,10 @@ function renderKPIs() {
 }
 
 // ============================================================
-// CHARTS (with number labels on bars)
+// CHARTS
 // ============================================================
 function renderCharts() {
+  // Institutions
   const dateMap = {};
   allRows.filter(isVerified).forEach(r => {
     const d = normDate(r.visitDate);
@@ -580,12 +614,7 @@ function renderCharts() {
     type: 'bar',
     data: {
       labels: instLabels,
-      datasets: [{
-        label: 'Verified',
-        data: instData,
-        backgroundColor: '#2563eb',
-        borderRadius: 6
-      }]
+      datasets: [{ label: 'Verified', data: instData, backgroundColor: '#2563eb', borderRadius: 6 }]
     },
     options: {
       responsive: true,
@@ -603,9 +632,54 @@ function renderCharts() {
         }
       }
     },
-    plugins: [barValueLabels('inst')]
+    plugins: [barValueLabels('inst', false)]
   });
 
+  // Order Value by date
+  const orderDateMap = {};
+  allRows.forEach(r => {
+    const d = normDate(r.visitDate);
+    if (!d) return;
+    orderDateMap[d] = (orderDateMap[d] || 0) + (r.orderValue || 0);
+  });
+  const oLabels = Object.keys(orderDateMap).sort();
+  const oData = oLabels.map(d => orderDateMap[d]);
+  const oMax = oData.length ? Math.max(...oData) : 0;
+
+  if (chartOrder) chartOrder.destroy();
+  chartOrder = new Chart(document.getElementById('chartOrderValue'), {
+    type: 'bar',
+    data: {
+      labels: oLabels,
+      datasets: [{ label: 'Order Value', data: oData, backgroundColor: '#0891b2', borderRadius: 6 }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      layout: { padding: { top: 28 } },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => '₹' + formatMoney(ctx.parsed.y)
+          }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            precision: 0,
+            callback: v => '₹' + formatMoney(v)
+          },
+          suggestedMax: oMax ? oMax * 1.25 : 1000
+        }
+      }
+    },
+    plugins: [barValueLabels('order', true)]
+  });
+
+  // Counters
   const counterDateMap = {};
   allRows.forEach(r => {
     const d = normDate(r.visitDate);
@@ -620,12 +694,7 @@ function renderCharts() {
     type: 'bar',
     data: {
       labels: cLabels,
-      datasets: [{
-        label: 'Counters',
-        data: cData,
-        backgroundColor: '#2dd4bf',
-        borderRadius: 6
-      }]
+      datasets: [{ label: 'Counters', data: cData, backgroundColor: '#2dd4bf', borderRadius: 6 }]
     },
     options: {
       responsive: true,
@@ -643,24 +712,24 @@ function renderCharts() {
         }
       }
     },
-    plugins: [barValueLabels('cnt')]
+    plugins: [barValueLabels('cnt', false)]
   });
 }
 
-function barValueLabels(id) {
+function barValueLabels(id, isMoney) {
   return {
     id: 'barValueLabels_' + id,
     afterDatasetsDraw(chart) {
       const { ctx } = chart;
       ctx.save();
-      ctx.font = '800 12px system-ui, Segoe UI, Arial';
+      ctx.font = '800 11px system-ui, Segoe UI, Arial';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'bottom';
 
       chart.getDatasetMeta(0).data.forEach((bar, i) => {
         const value = chart.data.datasets[0].data[i];
         if (value == null || value === 0) return;
-        const label = String(value);
+        const label = isMoney ? '₹' + formatMoney(value) : String(value);
         const w = ctx.measureText(label).width + 14;
         const h = 18;
         const x = bar.x - w / 2;
@@ -695,7 +764,7 @@ function roundRect(ctx, x, y, w, h, r, fill, stroke) {
 }
 
 // ============================================================
-// MAP + FILTER
+// MAP
 // ============================================================
 function getCoords(r) {
   const lat = parseFloat(r.liveLat || r.lat);
@@ -707,21 +776,13 @@ function getCoords(r) {
 
 function setMapFilter(f) {
   currentMapFilter = f;
-  // update button UI
-  const map = {
-    all:        'mapFilterAll',
-    verified:   'mapFilterVerified',
-    unverified: 'mapFilterUnverified'
-  };
-  Object.values(map).forEach(id => {
+  const mapIds = { all: 'mapFilterAll', verified: 'mapFilterVerified', unverified: 'mapFilterUnverified' };
+  Object.values(mapIds).forEach(id => {
     const el = document.getElementById(id);
     if (el) el.classList.remove('active');
   });
-  const activeId = map[f];
-  if (activeId) {
-    const el = document.getElementById(activeId);
-    if (el) el.classList.add('active');
-  }
+  const activeEl = document.getElementById(mapIds[f]);
+  if (activeEl) activeEl.classList.add('active');
   renderMapMarkers();
 }
 
@@ -750,7 +811,8 @@ function renderMapMarkers() {
       '<b>' + (r.institutionName || '—') + '</b><br>' +
       (r.institutionType || '') + '<br>' +
       'Verified: ' + (isVerified(r) ? 'Yes' : 'No') + '<br>' +
-      'Counters: ' + (r.totalCounters || 0)
+      'Counters: ' + (r.totalCounters || 0) + '<br>' +
+      'Order Value: ₹' + formatMoney(r.orderValue)
     );
     mapMarkers.push(m);
     bounds.push([c.lat, c.lng]);
@@ -845,14 +907,17 @@ function renderTable() {
     html += '<td>' + (isEntryAllowed(r)
       ? '<span class="badge badge-yes">Yes</span>'
       : '<span class="badge badge-no">No</span>') + '</td>';
+    html += '<td>' + r.mainCounters.length + '</td>';
+    html += '<td>' + r.oppositeCounters.length + '</td>';
     html += '<td>' + (r.totalCounters || 0) + '</td>';
+    html += '<td><b>₹' + formatMoney(r.orderValue) + '</b></td>';
     html += '<td>' + (r.visitDate || '—') + '</td>';
     html += '<td>' + (r.auditId || '—') + '</td>';
     html += '</tr>';
   });
 
   if (!html) {
-    html = '<tr><td colspan="10" style="text-align:center;padding:30px;color:#94a3b8;font-weight:700">No institutions found for selected filter</td></tr>';
+    html = '<tr><td colspan="13" style="text-align:center;padding:30px;color:#94a3b8;font-weight:700">No institutions found for selected filter</td></tr>';
   }
   document.getElementById('tableBody').innerHTML = html;
   renderPagination(total, totalPages, start, pageRows.length);
@@ -904,12 +969,13 @@ function downloadDump(scope) {
   const rows = scope === 'today' ? allRows.filter(isToday) : allRows;
 
   const headers = ['Institution', 'Type', 'State', 'Pincode', 'Verified', 'Entry Allowed',
-                   'Main Counters', 'Opposite Counters', 'Total Counters', 'Visit Date',
-                   'Audit ID', 'Photo Link'];
+                   'Main Counters', 'Opposite Counters', 'Total Counters', 'Order Value',
+                   'Visit Date', 'Audit ID', 'Photo Link'];
   const body = rows.map(r => [
     r.institutionName || '', r.institutionType || '', r.state || '', r.pincode || '',
     isVerified(r) ? 'Yes' : 'No', isEntryAllowed(r) ? 'Yes' : 'No',
     r.mainCounters.length, r.oppositeCounters.length, r.totalCounters,
+    r.orderValue || 0,
     r.visitDate || '', r.auditId || '', r.photo || ''
   ]);
 
